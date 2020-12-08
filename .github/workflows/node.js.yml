@@ -25,5 +25,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: ng build --prod
-    - run: ng test --code-coverage
+    - run: npm run build
+    - run: npm run test
